@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido */
+}
+
+.logo{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    width: 100%;
+    height: 760px;
+    background: url(./assets/fondo_inicio.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    color: black;
+    font-size: 30px;
+}
+
+.textos-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ocupa el ancho completo */
+    position: relative;
+    overflow: hidden; /* Esconde el desbordamiento */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.productos {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+.producto {
+    flex: 0 0 20%; /* Cada producto ocupa el 20% del ancho total (5 productos) */
+    text-align: left;
+    margin: 10px;
+}
+
+.producto img {
+    width: 300px;
+    height: 250px;
+}
+.panes{
+    display: grid;
+    grid-template:  1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 30px;   
+    width: 95%;
+}
+.pan{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #2e2e2e;
+}
+.footer{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 50px;
+    width: 100%;
+}
+
+.panes img{
+    width: 300px;
+    height: 250px;
+}
